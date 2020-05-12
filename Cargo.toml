@@ -8,6 +8,7 @@ edition = "2018"
 
 [profile.dev]
 opt-level = 0
+
 lto = true
 panic = "abort"
 
@@ -15,3 +16,4 @@ panic = "abort"
 crate-type = ["staticlib"]
 
 [dependencies]
+rlibc = "1.0.0"
