@@ -19,7 +19,7 @@ fn foo(_arr: [[char; WIDTH]; HEIGHT]) -> () {
 }
 
 #[no_mangle]
-fn os_main() {
+fn _start() {
     foo(TWO_DIMENSIONAL_ARRAY);
 }
 
