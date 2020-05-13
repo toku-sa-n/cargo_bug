@@ -1,5 +1,11 @@
-`cargo xbuild` causes the following error.
+Both `cargo xbuild` and `cargo build -Zbuild-std=core,alloc` succeed. However, they emit different errors when linking.
 
+Linking after `cargo xbuild`
 ```
-error: failed to get bitcode from object file for LTO (Bitcode section not found in object file)
+ld: target/cargo_settings/debug/librust_bug.a: error adding symbols: file format not recognized
+```
+
+Linking after `cargo build -Zbuild-std=core,alloc`
+```
+undefined reference to `memcpy'
 ```
