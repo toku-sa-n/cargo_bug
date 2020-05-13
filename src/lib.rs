@@ -1,6 +1,6 @@
 #![no_std]
 
-extern crate rlibc;
+extern crate compiler_builtins;
 
 const TWO_DIMENSIONAL_ARRAY: [[char; WIDTH]; HEIGHT] = [
     ['1', '2', '3', '4', '5', '6'],
